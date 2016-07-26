@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Camera</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+   <button primary (click)="openCamera()">Open Camera</button>
+   <img src="{{imageData}}" alt="">
+   <canvas id="joined"></canvas>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hotels</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+<button primary (click)="syncHotels()">Sync Hotels</button>
+<button primary (click)="destroyHotels()">DESTROY Hotels</button>
+<ion-item (click)="removeHotel(hotel.id)" *ngFor="let hotel of hotels">
+			<ion-avatar item-left>
+		      <img src="{{ hotel.hotelLogo }}">
+		    </ion-avatar>
+			<h2>{{ hotel.name }}</h2>
+		</ion-item>
+</ion-content>

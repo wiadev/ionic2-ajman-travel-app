@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Attractions</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content  class="attractions">
+
+	<ion-list>
+		<ion-item *ngFor="let attraction of attractions">
+			<ion-avatar item-left>
+		      <img src="{{ attraction.email }}">
+		    </ion-avatar>
+			<h2>{{ attraction.name }}</h2>
+		</ion-item>
+	</ion-list>
+
+</ion-content>
